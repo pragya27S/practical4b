@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6: Content Show/Hide</title>
+    <style>
+        .article-body {
+            display: none; /* Hide the article body by default */
+        }
+        .links {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="article">
+        <h2>Article Heading 1</h2>
+        <div class="links">
+            <a href="#" id="showLink1">Show</a>
+            <a href="#" id="hideLink1" style="display: none;">Hide</a>
+        </div>
+        <div class="article-body" id="body1">
+            <p>This is the content of the first article. It is initially hidden.</p>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2>Article Heading 2</h2>
+        <div class="links">
+            <a href="#" id="showLink2">Show</a>
+            <a href="#" id="hideLink2" style="display: none;">Hide</a>
+        </div>
+        <div class="article-body" id="body2">
+            <p>This is the content of the second article. It is initially hidden.</p>
+        </div>
+    </div>
+
+    <script src="exercise6.js"></script>
+</body>
+</html>

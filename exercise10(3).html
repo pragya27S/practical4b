@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Page Attack</title>
+    <script>
+        let preventNavigation = true;
+
+        window.onbeforeunload = function () {
+            if (preventNavigation) {
+                return "You're not allowed to leave!";
+            }
+        };
+
+        function keepUserHere() {
+            setTimeout(function () {
+                location.href = location.href;  // Reload the page after a slight delay.
+            }, 100);
+        }
+
+        window.onload = keepUserHere;  // Trigger the reload when the page loads.
+    </script>
+</head>
+<body>
+    <h1>Sticky Page Attack</h1>
+    <p>You'll never escape this page!</p>
+</body>
+</html>

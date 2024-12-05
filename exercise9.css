@@ -1,0 +1,31 @@
+/* exercise9.css */
+#map {
+    position: relative;
+    border: 2px solid black;
+}
+
+.cell {
+    position: absolute;
+    width: var(--cell-size);
+    height: var(--cell-size);
+}
+
+.wall {
+    background-color: grey;
+}
+
+.empty {
+    background-color: white;
+}
+
+.start {
+    background-color: blue;
+}
+
+.end {
+    background-color: red;
+}
+
+.character {
+    background-color: green;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4: Formatting Text</title>
+    <style>
+        #text {
+            border: 1px solid #000;
+            padding: 10px;
+            width: 300px;
+            height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Text Formatter</h2>
+
+    <form id="textForm">
+        <label for="fontSize">Font Size:</label>
+        <select id="fontSize">
+            <option value="16px">16px</option>
+            <option value="20px">20px</option>
+            <option value="24px">24px</option>
+            <option value="28px">28px</option>
+        </select>
+        <br><br>
+
+        <label for="fontFamily">Font Family:</label>
+        <select id="fontFamily">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Georgia">Georgia</option>
+        </select>
+        <br><br>
+
+        <label for="fontColor">Font Color:</label>
+        <input type="color" id="fontColor" value="#000000">
+        <br><br>
+
+        <label for="bgColor">Background Color:</label>
+        <input type="color" id="bgColor" value="#ffffff">
+        <br><br>
+
+        <label for="bold">Bold:</label>
+        <input type="checkbox" id="bold">
+        <br><br>
+
+        <label for="italic">Italic:</label>
+        <input type="checkbox" id="italic">
+        <br><br>
+
+        <label for="underline">Underline:</label>
+        <input type="checkbox" id="underline">
+    </form>
+
+    <h3>Preview:</h3>
+    <div id="text">This is sample text. Change the options above to format this text.</div>
+
+    <script src="exercise4.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole Popups</title>
+    <script>
+        function infinitePopups() {
+            while (true) {
+                window.open("data:text/html,<h1>You can't stop me!</h1>", "_blank", "width=200,height=200");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Whack-a-Mole Popups</h1>
+    <p>Click the button below... if you dare!</p>
+    <button onclick="infinitePopups()">Click here</button>
+</body>
+</html>
